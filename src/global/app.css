@@ -51,6 +51,7 @@
   --ion-color-tertiary-shade: #e07100;
   --ion-color-tertiary-tint: #ff8d1a;
 
+
   --ion-color-success: #10dc60;
   --ion-color-success-rgb: 16,220,96;
   --ion-color-success-contrast: #ffffff;
@@ -79,12 +80,12 @@
   --ion-color-dark-shade: #40454c;
   --ion-color-dark-tint: #5b6067;
 
-  --ion-color-medium: #989aa2;
-  --ion-color-medium-rgb: 152,154,162;
+  --ion-color-medium: #0cd1e8;
+  --ion-color-medium-rgb: 12,209,232;
   --ion-color-medium-contrast: #ffffff;
   --ion-color-medium-contrast-rgb: 255,255,255;
-  --ion-color-medium-shade: #86888f;
-  --ion-color-medium-tint: #a2a4ab;
+  --ion-color-medium-shade: #0bb8cc;
+  --ion-color-medium-tint: #24d6ea;
 
   --ion-color-light: #f3f4f8;
   --ion-color-light-rgb: 243,244,248;
@@ -95,4 +96,10 @@
 
   /* JRM additions */
   --ion-grid-padding: 30px;
+  --ion-background-color: transparent;
+  --ion-font-family: 'Lacquer', sans-serif;
+  /*'Amatic SC', cursive;
+  'Indie Flower', cursive;
+  'Shadows Into Light', cursive;
+  'Indie Flower', cursive;*/
 }
