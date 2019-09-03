@@ -13,7 +13,6 @@ export class AppHome {
           <ion-title>Welcome to Middlesex Vermont!</ion-title>
         </ion-toolbar>
       </ion-header>,
-
       <ion-content class='ion-padding hungerMountain'>
           <ion-text color='light'>
           Welcome to our town's little mobile app, which we designed to help our neighbors stay in touch
@@ -28,7 +27,7 @@ export class AppHome {
 
         <ion-row>
           <ion-col>
-            <ion-button size="large" href="/govt/offices" expand="block">
+            <ion-button size="large" href="/offices" expand="block">
               <ion-icon slot='start' name="albums"></ion-icon>
                 Town Offices
               </ion-button>
@@ -45,8 +44,8 @@ export class AppHome {
         <ion-row>       
           <ion-col>
           <ion-button size="large" href="/events" expand="block" color='medium'>
-            <ion-icon slot='start' name="happy"></ion-icon>
-            Town Events
+            <ion-icon slot='start' name="calendar"></ion-icon>
+            Events Calendar
           </ion-button>
           </ion-col>
           <ion-col>
@@ -56,16 +55,31 @@ export class AppHome {
               </ion-button>
           </ion-col>
         </ion-row>
-        {/* <ion-row>
-          <ion-col>
-            <ion-button size="large" href="/profile/ionic" expand="block">Profile page</ion-button>
-          </ion-col>
-          <ion-col>
-            <ion-button href="/history" expand="block">Profile page</ion-button>
-          </ion-col>
-        </ion-row> */}
-      </ion-grid>       
-    </ion-content>
-    ];
+      </ion-grid>      
+    </ion-content>,
+    <ion-footer>
+      <ion-toolbar no-padding color='primary'>
+            <ion-button title='Settings' href="/profile/ionic">
+              &nbsp;&nbsp;
+              <ion-icon name="cog"></ion-icon>
+            </ion-button>
+            <ion-button title='Contact Us' href="/profile/ionic">
+              <ion-icon name="mail"></ion-icon>
+            </ion-button>
+            <ion-button title='Help' href="/profile/help">
+              <ion-icon name="help-circle-outline"></ion-icon>
+            </ion-button>
+            <ion-button title='Sign Up!' href="/profile/signup">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </ion-button>
+            <ion-button title='Send a Middlesex photo!' href="/profile/photo">
+              <ion-icon name="images"></ion-icon>
+            </ion-button>
+            <ion-button title='About' href="/profile/photo">
+              <ion-icon name="information-circle-outline"></ion-icon>
+            </ion-button>
+      </ion-toolbar>
+    </ion-footer>
+    ]
   }
 }

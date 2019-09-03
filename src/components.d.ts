@@ -9,7 +9,11 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppChatter {}
+  interface AppEvents {}
   interface AppHome {}
+  interface AppMaps {}
+  interface AppOffices {}
   interface AppProfile {
     'name': string;
   }
@@ -19,10 +23,34 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLAppChatterElement extends Components.AppChatter, HTMLStencilElement {}
+  var HTMLAppChatterElement: {
+    prototype: HTMLAppChatterElement;
+    new (): HTMLAppChatterElement;
+  };
+
+  interface HTMLAppEventsElement extends Components.AppEvents, HTMLStencilElement {}
+  var HTMLAppEventsElement: {
+    prototype: HTMLAppEventsElement;
+    new (): HTMLAppEventsElement;
+  };
+
   interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppMapsElement extends Components.AppMaps, HTMLStencilElement {}
+  var HTMLAppMapsElement: {
+    prototype: HTMLAppMapsElement;
+    new (): HTMLAppMapsElement;
+  };
+
+  interface HTMLAppOfficesElement extends Components.AppOffices, HTMLStencilElement {}
+  var HTMLAppOfficesElement: {
+    prototype: HTMLAppOfficesElement;
+    new (): HTMLAppOfficesElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -37,21 +65,33 @@ declare global {
     new (): HTMLAppRootElement;
   };
   interface HTMLElementTagNameMap {
+    'app-chatter': HTMLAppChatterElement;
+    'app-events': HTMLAppEventsElement;
     'app-home': HTMLAppHomeElement;
+    'app-maps': HTMLAppMapsElement;
+    'app-offices': HTMLAppOfficesElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
   }
 }
 
 declare namespace LocalJSX {
+  interface AppChatter extends JSXBase.HTMLAttributes<HTMLAppChatterElement> {}
+  interface AppEvents extends JSXBase.HTMLAttributes<HTMLAppEventsElement> {}
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppMaps extends JSXBase.HTMLAttributes<HTMLAppMapsElement> {}
+  interface AppOffices extends JSXBase.HTMLAttributes<HTMLAppOfficesElement> {}
   interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
     'name'?: string;
   }
   interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {}
 
   interface IntrinsicElements {
+    'app-chatter': AppChatter;
+    'app-events': AppEvents;
     'app-home': AppHome;
+    'app-maps': AppMaps;
+    'app-offices': AppOffices;
     'app-profile': AppProfile;
     'app-root': AppRoot;
   }
